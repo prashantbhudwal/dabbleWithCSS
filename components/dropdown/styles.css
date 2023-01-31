@@ -1,0 +1,34 @@
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #2563eb;
+  font-size: 1.2rem;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.placeholder-box,
+.options-container {
+  border-radius: 0.25em;
+  padding: 0.5em 0.75em;
+}
+
+.placeholder-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3b82f6;
+  color: #eff6ff;
+}
+
+.options-container {
+  background-color: #eff6ff;
+}
+
+.option {
+  padding: 0.5em;
+}
+
+.selected {
+  background-color: #bfdbfe;
+}

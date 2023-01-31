@@ -23,12 +23,13 @@
 
 .options-container {
   background-color: #eff6ff;
+  display: none;
 }
 
 .option {
   padding: 0.5em;
 }
 
-.selected {
+.option:hover {
   background-color: #bfdbfe;
 }

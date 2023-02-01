@@ -1,17 +1,52 @@
-.component-container {
-  background-color: green;
+.card-wrapper,
+.item-hero-wrapper,
+.card-content-wrapper,
+.card-actions-wrapper,
+.action-buttons-wrapper,
+.icon-wrapper {
+  border: 1px solid gray;
+  display: flex;
+}
+
+.card-wrapper {
+  border-radius: 0.25em;
+  justify-content: flex-start;
+}
+
+.item-hero-wrapper {
+  width: 20%;
+}
+
+.card-content-wrapper {
+  flex-direction: column;
+  width: 60%;
+}
+
+.card-actions-wrapper {
+  align-items: center;
+  width: 20%;
+}
+
+.action-buttons-wrapper {
+  width: 50%;
+  height: 20%;
+}
+
+.icon-wrapper {
+  width: 35%;
+}
+.item-counter {
+  width: 30%;
+}
+
+.item-hero-img {
+  display: block;
+  width: 20%;
+  height: 20%;
 }
 
 .item-count {
-  width: 10px;
-  height: 10px;
 }
 
 .counter {
-  background-color: gray;
-  display: block;
-  color: black;
-  width: 100px;
-  height: 100px;
-  fill: gold;
 }

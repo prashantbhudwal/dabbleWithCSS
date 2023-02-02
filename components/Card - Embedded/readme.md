@@ -28,3 +28,8 @@ The assumptions are as follows
   - drop shadow under the plate
 - all the elements wit
   - light shadows on the left and right
+
+# Known Issues
+
+- Non responsive
+- Bad Image

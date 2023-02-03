@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "typicons.font": "^2.1.2"
   }
 }

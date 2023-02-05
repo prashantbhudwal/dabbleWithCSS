@@ -1,8 +1,14 @@
 /* Local Fonts */
 @font-face {
-  font-family: "Canela Deck";
+  font-family: "Canela Deck Bold";
   src: url("/fonts/Canela_Collection/woff/CanelaDeck-Bold.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Canela Deck Light";
+  src: url("/fonts/Canela_Collection/woff/CanelaDeck-Light.woff2") format("woff2");
+}
+
 
 @font-face {
   font-family: "Canela Text";
@@ -16,7 +22,8 @@
 
 /* Custom Properties */
 :root {
-  --ff-heading: "Canela Deck";
+  --ff-heading-bold: "Canela Deck Bold";
+  --ff-heading: "Canela Deck Light";
   --ff-body: "Canela Text";
   --ff-mono: monospace;
   --ff-italics: "Canela Italic";
@@ -28,23 +35,25 @@
   --clr-gray: #4a4a46;
   --clr-white: #f6f5f1;
 
-  --fs-body: 1rem;
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
+  --fs-sm: 0.75rem;
+  --fs-base: 1rem;
+  --fs-l: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2.5rem;
 
-  --lh-body: 1.6;
-  --lh-h1: 1;
-  --lh-h2: 1.2;
-  --lh-h3: 1.3;
+  --lh-base: 1.6;
+  --lh-l: 1;
+  --lh-xl: 1.2;
+  --lh-xxl: 1.3;
 }
 
 @media (min-width:800px) {
   :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
+    --fs-sm: 1rem;
+    --fs-base: 1.125rem;
+    --fs-l: 1.5rem;
+    --fs-xl: 2.5rem;
+    --fs-xxl: 4rem;
   }
 }
 
@@ -59,7 +68,7 @@
 body {
   padding: 0;
   font-family: var(--font-body);
-  font-size: var(--fs-body);
+  font-size: var(--fs-base);
   line-height: var(--lh-body);
   background-color: var(--clr-white);
   color: var(--clr-black);
@@ -73,26 +82,65 @@ img {
 h1,
 h2,
 h3 {
-  font-family: var(--font-heading);
   color: var(--clr-primary-light);
   margin: 0;
 }
 
-h1 {
-  font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
-}
-
-h2 {
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
-}
-
-h3 {
-  font-size: var(--fs-h3);
-  line-height: var(--lh-h3);
-}
-
 a {
   color: var(--clr-accent);
+}
+
+/* Typography */
+
+.section__title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xxl);
+  line-height: var(--lh-xxl);
+}
+
+.section__title>strong {
+  display: block;
+  font-family: var(--ff-heading-bold);
+}
+
+.section__subtitle {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-xl);
+  margin: 0;
+}
+
+.section__title--services,
+.section__title--mywork {
+  color: #008ba3;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background-color: var(--clr-accent);
+  color: var(--clr-white);
+}
+
+.section__subtitle--mywork {
+  color: var(--clr-white);
+}
+
+.service>h3 {
+  font-family: var(--ff-heading);
+  color: var(--clr-white);
+}
+
+.service>p {
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+}
+
+
+/*  */
+.services {
+  background-color: var(--clr-black);
+}
+
+.mywork {
+  background-color: var(--clr-black);
 }

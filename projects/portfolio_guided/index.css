@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Canela Deck";
+  src: url("/fonts/Canela_Collection/woff/CanelaDeck-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Canela Text";
+  src: url("/fonts/Canela_Collection/woff/CanelaText-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Canela Italic";
+  src: url("/fonts/Canela_Collection/woff/CanelaText-LightItalic.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading: "Canela Deck";
+  --font-body: "Canela Text";
+  --font-mono: monospace;
+  --font-italics: "Canela Italic";
+}
+
+body {
+  font-family: var(--font-body);
+}

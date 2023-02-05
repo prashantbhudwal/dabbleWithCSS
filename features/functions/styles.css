@@ -1,0 +1,85 @@
+:root {
+  --col-primary: hsl(79, 53%, 44%);
+  --col-secondary: rgb(18, 100, 125);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid black;
+}
+.code {
+  padding-top: 2em;
+  display: block;
+  margin: auto;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  background-color: darkslategray;
+  color: cyan;
+  font-family: monospace;
+  text-align: center;
+}
+.nav-bar {
+  width: 100vw;
+  height: 50px;
+  background-color: var(--col-secondary);
+  position: sticky;
+}
+
+.card-stack {
+  margin: auto;
+  margin-top: 5px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(100vh - 55px);
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  width: 80vw;
+}
+.card {
+  box-shadow: 0 2px 3px grey;
+  background-color: var(--col-primary);
+  min-height: 5vw;
+  min-width: 5vw;
+}
+
+.article-container {
+  margin: auto;
+  margin-top: 5vh;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  /* ! Using Min */
+  width: min(700px, 90vw);
+  font-size: 1vw;
+}
+
+.article-paragraph {
+  color: antiquewhite;
+  padding: 1em;
+  background-color: var(--col-secondary);
+}
+
+.special-paragraph {
+  font-size: max(16px, 1vw);
+}
+
+.special-paragraph {
+  background-color: darkorchid;
+}
+
+.clamped-container {
+  width: clamp(200px, 90vw, 700px);
+  font-size: clamp(16px, 1vw, 32px);
+}

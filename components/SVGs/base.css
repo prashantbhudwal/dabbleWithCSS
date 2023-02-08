@@ -1,0 +1,27 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  padding: none;
+  margin: none;
+  padding-top: 2em;
+}
+/* Mimics a smartphone */
+.component-container {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  min-width: 350px;
+  max-width: 440px;
+  min-height: 700px;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+  color: #18181b;
+}

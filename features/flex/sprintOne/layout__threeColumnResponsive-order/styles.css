@@ -1,0 +1,71 @@
+html,
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item {
+    border: 1px solid fuchsia;
+    flex: 1 1 auto;
+    min-height: 6.25rem;
+}
+
+main {
+    background-color: blanchedalmond;
+    order: 2;
+}
+
+header {
+    order: 1;
+}
+
+aside {
+    order: 3;
+}
+
+footer {
+    order: 4
+}
+
+
+
+@media(min-width:600px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    main {
+        order: 3;
+    }
+
+    header {
+        width: 100%;
+        order: 1;
+        max-height: 75px;
+    }
+
+    aside {
+        order: 2;
+        height: 100%;
+    }
+
+    .aside-two {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+        width: 100%;
+        max-height: 75px;
+    }
+
+
+
+}

@@ -1,0 +1,36 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: indigo;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 2.75rem;
+    padding: 0 1em;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.last-item {
+    margin-left: auto;
+}
+
+/* Reversed */
+
+.reversed {
+    margin-top: 1em;
+    background-color: brown;
+    flex-direction: row-reverse;
+}
+
+.last-item-reversed {
+    margin-right: auto;
+}

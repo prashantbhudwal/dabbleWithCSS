@@ -1,0 +1,49 @@
+.InlineFlex {
+    height: 100px;
+    width: 200px;
+    margin: 1em;
+    background-color: orange;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1em;
+}
+
+/* Navbar with flex */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: indigo;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 2.75rem;
+    padding: 0 1em;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.last-item {
+    margin-left: auto;
+}
+
+/* Navbar with inline flex */
+
+.inline {
+    margin-top: 1em;
+    display: inline-flex;
+}
+
+.last-item-inline {
+    margin-left: 200px;
+}

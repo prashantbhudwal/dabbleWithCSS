@@ -1,0 +1,123 @@
+/* Base Styles */
+.container {
+    background-color: gray;
+    margin-bottom: 1em;
+
+}
+
+.item {
+    background-color: gold;
+    height: 100px;
+    width: 100px;
+    border: 1px solid brown;
+}
+
+/* First Container*/
+
+.firstContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.firstContainer>.item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50px;
+    /* acts like min-width, when growth and shrinkage has no effect*/
+}
+
+.firstContainer>.item {
+    flex: 0 0.25 200px;
+}
+
+.firstContainer>.itemTwo {
+    flex: 0 1 200px
+}
+
+/* Second Container */
+
+.secondContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.secondContainer>.item {
+    flex: 1 0 200px;
+}
+
+.secondContainer>.itemTwo {
+    flex: .5 0 200px;
+}
+
+/* Third container */
+.thirdContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.thirdContainer>.item {
+    flex: 1 1 200px;
+}
+
+.thirdContainer>.itemTwo {
+    flex: .5 1.5 200px;
+    background-color: cadetblue;
+}
+
+/* Card */
+.cardStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+
+
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 2em;
+    box-shadow: 0 1px 5px blueviolet;
+    border-radius: 0.25em;
+    margin: 1em;
+    max-width: 500px;
+}
+
+.cardContainer>.title {
+    font-weight: 700;
+}
+
+.heroImage {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.imageWrapper {
+    border-radius: 50%;
+    border: 1px solid blueviolet;
+    background-image: url('/assets/yoga.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.firstCard {
+    flex: 1 0.5 400px;
+    border: 1px solid red;
+}
+
+.secondCard {
+    flex: 2 1 300px;
+}
+
+.thirdCard {
+    flex: 1 2 300px;
+}

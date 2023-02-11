@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    width: 500px;
+    background-color: #bbb;
+    align-items: center;
+    border: 1px solid #111;
+    flex-wrap: wrap;
+}
+
+.item {
+    color: #111;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 160px;
+    height: 40px;
+    background-color: yellow;
+    border: 1px dashed #545454;
+}
